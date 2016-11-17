@@ -13,10 +13,10 @@ class physEngine(object):
 		self.root.geometry('800x800')
 		self.canvas=Canvas(self.root,height=800,width=800)
 		self.canvas.pack()
-		self.basketball=PhotoImage(file='Basketball_large.gif')
-		self.netFront=PhotoImage(file='netFront.gif')
-		self.netBack=PhotoImage(file='netBack.gif')
-		self.backboard=PhotoImage(file='backboard.gif')
+		self.basketball=PhotoImage(file='assets/Basketball_large.gif')
+		self.netFront=PhotoImage(file='assets/netFront.gif')
+		self.netBack=PhotoImage(file='assets/netBack.gif')
+		self.backboard=PhotoImage(file='assets/backboard.gif')
 		self.boundaries=[border([0,0],[0,800]),border([0,800],[800,800]),\
 		border([800,800],[800,0]),border([800,0],[0,0])]
 		self.dt=int(1000/120)
