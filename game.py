@@ -38,11 +38,12 @@ class physEngine(object):
 		self.inBasket=False
 		self.menu()
 		self.canvas.bind('<Button-1>',lambda x:\
-		self.clickFunctions[self.gameMode](x))
+		    self.clickFunctions[self.gameMode](x))
 		self.canvas.bind('<B1-Motion>',lambda x:\
-		self.dragFunctions[self.gameMode](x))
+		    self.dragFunctions[self.gameMode](x))
 		self.canvas.bind('<ButtonRelease-1>',lambda x:\
-		self.releaseFunctions[self.gameMode](x))
+		    self.releaseFunctions[self.gameMode](x))
+                self.canvas.configure(background='white')
 		self.root.after(self.dt,self.move)
 		self.root.mainloop()
 
